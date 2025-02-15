@@ -2,19 +2,14 @@ package Easy.AddDigits;
 
 public class Solution {
     public int addDigits(int num) {
-        int sum = 0;
-        int tinySum = 0;
-        while (num > 0) {
-            int digit = num % 10;
-            sum += digit;
-
-            num /= 10;
+        while (num >= 10) {
+            int sum = 0;
+            while (num > 0) {
+                sum += num % 10;
+                num /= 10;
+            }
+            num = sum; // Update num to the new sum and repeat
         }
-        while (sum > 0) {
-            int sumDigit = sum % 10;
-            tinySum += sumDigit;
-            sum /= 10;
-        }
-        return tinySum;
+        return num;
     }
 }
