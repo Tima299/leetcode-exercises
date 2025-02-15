@@ -8,7 +8,7 @@ public class Solution {
                 sum += num % 10;
                 num /= 10;
             }
-            num = sum; // Update num to the new sum and repeat
+            num = sum;
         }
         return num;
     }
