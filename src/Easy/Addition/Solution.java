@@ -1,6 +1,6 @@
-package Easy.Math;
+package Easy.Addition;
 
-public class Solutions {
+public class Solution {
     public int add(int a, int b) {
         return a + b;
     }
